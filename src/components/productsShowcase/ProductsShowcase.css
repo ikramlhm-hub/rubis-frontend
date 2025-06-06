@@ -1,0 +1,136 @@
+.products-plain {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 28px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 0 40px 0;
+}
+
+.product-wrapper {
+  position: relative;
+  flex: 0 1 31%;
+  max-width: 31%;
+  min-width: 270px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 520px;
+  background: transparent;
+  border-radius: 32px;
+  overflow: visible;
+  
+}
+
+.product-image-overlay-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.product-image-overlay-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 32px;
+  display: block;
+}
+
+.badge {
+  position: absolute;
+  top: 18px;
+  right: 26px;
+  background-color: #f8426a;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 20px;
+  z-index: 2;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+/* Overlay sur l'image */
+.product-overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-radius: 0 0 32px 32px;
+  box-sizing: border-box;
+  padding: 28px 20px 24px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  font-family: 'Didact Gothic', sans-serif !important;
+
+}
+
+.product-overlay h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  text-align: center;
+}
+
+.product-overlay p {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 18px 0;
+  text-align: center;
+}
+
+.add-to-cart-btn {
+  width: 100%;
+  padding: 12px 0;
+  border-radius: 16px;
+  background: #f8426a;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  font-family: "Didact Gothic", sans-serif;
+  cursor: pointer;
+  transition: background 0.16s;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.10);
+  align-self: stretch;
+  margin-top: auto;
+}
+.add-to-cart-btn:hover {
+  background-color: #d52e52;
+}
+
+/* Responsive tablette */
+@media (max-width: 900px) {
+  .products-plain {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 36px 0 12px 0;
+  }
+  .product-wrapper {
+    flex: 1 1 90vw;
+    max-width: 95vw;
+    min-width: 0;
+    height: 430px;
+  }
+  .product-overlay {
+    padding: 18px 8px 14px 8px;
+  }
+}
+
+/* Responsive mobile */
+@media (max-width: 600px) {
+  .product-wrapper {
+    height: 340px;
+  }
+  .product-overlay {
+    padding: 12px 4px 10px 4px;
+  }
+  .add-to-cart-btn {
+    font-size: 0.97rem;
+    padding: 9px 0;
+  }
+}

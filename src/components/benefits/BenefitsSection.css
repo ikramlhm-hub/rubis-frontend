@@ -1,0 +1,12 @@
+.benefits-section {
+  display: flex;
+  justify-content: center;
+  padding: 80px 0 40px;
+  background-color: white;
+}
+
+.benefits-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}

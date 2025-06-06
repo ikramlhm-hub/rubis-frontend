@@ -1,0 +1,40 @@
+.demonstration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 0px 40px;
+  background-color: white;
+  flex-wrap: wrap;
+}
+
+/* Réduit la taille des images pour qu'elles tiennent facilement côte à côte */
+.demo-image-wrapper img {
+  width: 4px50;
+  height: 550px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  display: block;
+  margin-top: 50px;
+}
+
+.demo-image-wrapper img:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive pour mobile/tablette : images l'une sous l'autre */
+@media (max-width: 850px) {
+  .demonstration {
+    flex-direction: column;
+    gap: 28px;
+    padding: 0px 8vw;
+  }
+  .demo-image-wrapper img {
+    width: 95vw;
+    max-width: 380px;
+    height: auto;
+    margin: 0 auto;
+  }
+}

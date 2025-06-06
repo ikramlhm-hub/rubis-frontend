@@ -1,0 +1,38 @@
+/* 1. Import une seule fois la police custom Recoleta */
+@font-face {
+  font-family: 'Recoleta';
+  src: url('./assets/fonts/Recoleta-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 2. Didact Gothic importé automatiquement via Google Fonts dans public/index.html */
+
+/* 3. Body : police générale = Didact Gothic */
+body {
+  margin: 0;
+  font-family: 'Didact Gothic', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 4. Tous les titres premium en Recoleta Black */
+.register-title,
+.login-title,
+.bienfaits-hero-title,
+h1, h2, h3 {
+  font-family: 'Recoleta', serif;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+}
+
+/* 5. Les autres textes restent en Didact Gothic */
+p, label, input, button, .register-link, .login-link {
+  font-family: 'Didact Gothic', Arial, sans-serif;
+}
+
+/* 6. (optionnel) Bloc code */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}

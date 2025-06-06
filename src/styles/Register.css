@@ -1,0 +1,249 @@
+.register-main {
+  min-height: 80vh;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-box {
+  background: #ffd5e5;
+  /* Même largeur que le footer/hero sur desktop */
+  width: calc(100vw - 64px);
+  max-width: 1300px;
+  min-width: 320px;
+  margin: 40px auto;
+  padding: 62px 0 56px 0;
+  border-radius: 22px;
+  box-shadow: 0 4px 28px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-title {
+  color: #f8426a;
+  font-family: 'Recoleta', serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  margin-bottom: 38px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.register-form {
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  align-items: center;
+}
+
+.register-form input {
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  background: #fff;
+  padding: 18px 28px;
+  font-size: 1.13rem;
+  font-family: "Didact Gothic", sans-serif;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.04);
+  width: 100%;
+  max-width: 520px;
+  transition: border 0.2s;
+}
+.register-form input:focus {
+  border: 1.5px solid #f8426a;
+}
+
+.register-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 18px;
+  margin-top: 24px;
+  width: 100%;
+  max-width: 520px;
+}
+
+.register-btn {
+  padding: 16px 0;
+  background: #f8426a;
+  color: #fff;
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.18rem;
+  width: 65%;
+  min-width: 200px;
+  cursor: pointer;
+  transition: background 0.15s;
+  box-shadow: 0 2px 12px rgba(248,66,106,0.09);
+}
+.register-btn:disabled {
+  background: #ffe6ed;
+  color: #f8426a;
+  cursor: not-allowed;
+}
+
+.register-link {
+  color: #222;
+  font-size: 1.09rem;
+  text-decoration: none;
+  font-family: "Didact Gothic", sans-serif;
+  line-height: 46px;
+  transition: color 0.15s;
+}
+.register-link:hover {
+  color: #f8426a;
+}
+
+.register-error-message {
+  color: #d8000c;
+  font-size: 1.03rem;
+  background: #ffdddd;
+  padding: 10px 12px;
+  border-radius: 9px;
+  margin-top: 24px;
+  text-align: center;
+  width: 100%;
+  max-width: 520px;
+}
+
+@media (max-width: 1024px) {
+  .register-box {
+    width: calc(100vw - 24px);
+    padding: 38px 0 28px 0;
+    border-radius: 16px;
+  }
+  .register-form, .register-actions, .register-error-message {
+    max-width: 95vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .register-box {
+    padding: 22px 0 16px 0;
+    min-width: unset;
+    max-width: 99vw;
+    width: 99vw;
+  }
+  .register-title {
+    font-size: 1.35rem;
+    margin-bottom: 20px;
+  }
+  .register-form input, .register-error-message {
+    font-size: 0.97rem;
+    padding: 14px 10px;
+    max-width: 96vw;
+  }
+  .register-actions {
+    gap: 7px;
+    margin-top: 12px;
+    max-width: 96vw;
+  }
+  .register-btn {
+    font-size: 1rem;
+    width: 70vw;
+    min-width: unset;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  .register-main {
+    padding: 0 0vw;
+    min-height: 100vh;
+    background: #fff;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .register-box {
+    width: 95vw;
+    min-width: unset;
+    max-width: 99vw;
+    margin: 18px auto;
+    padding: 22px 0 18px 0;
+    border-radius: 26px;
+    box-shadow: 0 4px 28px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .register-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-family: 'Recoleta', serif;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  .register-form {
+    width: 92vw;
+    max-width: 99vw;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+  }
+
+  .register-form input {
+    width: 92vw;
+    max-width: 98vw;
+    min-width: unset;
+    font-size: 1.07rem;
+    border-radius: 16px;
+    padding: 16px 18px;
+    margin-bottom: 0;
+  }
+
+  .register-actions {
+    width: 92vw;
+    max-width: 99vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    margin-top: 20px;
+  }
+
+  .register-btn {
+    width: 63vw;
+    min-width: unset;
+    font-size: 1.05rem;
+    border-radius: 26px;
+    padding: 15px 0;
+    margin-right: 0;
+    box-shadow: 0 1px 8px rgba(248,66,106,0.08);
+  }
+
+  .register-link {
+    color: #222;
+    font-size: 1.01rem;
+    background: none;
+    border: none;
+    margin-left: 12px;
+    text-align: right;
+    text-decoration: none;
+    font-family: "Didact Gothic", sans-serif;
+    padding: 0;
+    line-height: 44px;
+  }
+  .register-link:hover {
+    color: #f8426a;
+  }
+
+  .register-error-message {
+    font-size: 0.97rem;
+    padding: 12px 0;
+    max-width: 96vw;
+    margin-top: 16px;
+  }
+}

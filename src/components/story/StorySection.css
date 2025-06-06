@@ -1,0 +1,78 @@
+.story-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  padding: 80px 40px;
+  background-color: white;
+  flex-wrap: wrap;
+}
+
+/* IMAGE À GAUCHE */
+.story-left img.team-photo {
+  width: 480px;
+  max-width: 92vw;
+  border-radius: 32px;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+  display: block;
+}
+
+/* TEXTE À DROITE */
+.story-right {
+  max-width: 540px;
+  min-width: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* TITRE EN REFLECTA BLACK (PARTOUT) */
+.story-title {
+  font-family: 'Recoleta Black', serif ;
+  font-size: 2.6rem;
+  font-weight: 900;
+  margin-bottom: 30px;
+  color: black;
+  letter-spacing: 1px;
+}
+
+/* TEXTE ET SIGNATURE EN DIDACT GOTHIC */
+.justified,
+.signature {
+  font-family: 'Didact Gothic', sans-serif ;
+}
+
+.justified {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: justify;
+  color: #333;
+}
+
+.signature {
+  font-size: 1.7rem;
+  color: black;
+  text-align: right;
+  margin-top: 40px;
+  letter-spacing: 0.5px;
+  font-family: 'Recoleta Black', serif ;
+
+}
+
+@media (max-width: 900px) {
+  .story-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    padding: 36px 6vw;
+  }
+  .story-left img.team-photo {
+    width: 96vw;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .story-right {
+    max-width: 98vw;
+    padding: 0 2vw;
+  }
+}

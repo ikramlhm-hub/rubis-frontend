@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'Recoleta Black';
+  src: url('../assets/fonts/Recoleta-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+.notre-histoire-block h1,
+.notre-histoire-block h2,
+.notre-histoire-block h3 {
+  font-family: 'Recoleta Black', serif !important;
+  font-weight: 900;
+}
+
+
+@font-face {
+  font-family: 'Recoleta Black';
+  src: url('../assets/fonts/Recoleta-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+.notre-histoire-block {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto 56px auto;
+  padding: 0;
+}
+
+.notre-histoire-content {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: center;
+  gap: 54px;
+}
+
+.notre-histoire-texte {
+  max-width: 600px;
+  font-family: "Didact Gothic", Arial, sans-serif;
+}
+
+.notre-histoire-block h1,
+.notre-histoire-texte h2,
+.notre-histoire-texte h3,
+.notre-histoire-texte h1 {
+  font-family: 'Recoleta Black', serif !important;
+  font-weight: 900;
+  color: #f8426a;
+  margin-bottom: 24px;
+}
+
+
+.notre-histoire-img img {
+  width: 100%;
+  max-width: 560px;
+  border-radius: 22px;
+  display: block;
+  object-fit: cover;
+  box-shadow: 0 2px 24px rgba(0,0,0,0.07);
+}
+
+@media (max-width: 900px) {
+  .notre-histoire-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .notre-histoire-img img {
+    max-width: 97vw;
+    height: auto;
+    border-radius: 14px;
+  }
+}

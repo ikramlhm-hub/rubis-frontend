@@ -1,0 +1,30 @@
+.header {
+  width: 100%;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.header-top {
+  background-color: #F8426A;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: white;
+}
+
+.logo {
+  height: 60px;
+}
+
+.icons img {
+  height: 24px;
+  margin-left: 20px;
+  cursor: pointer;
+}

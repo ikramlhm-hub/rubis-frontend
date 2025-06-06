@@ -1,0 +1,83 @@
+/* styles/Commande.css */
+.commande-main {
+  max-width: 500px;
+  margin: 42px auto 0 auto;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 16px rgba(231,59,131,0.10);
+  padding: 40px 32px;
+  margin-bottom: 100px;
+}
+
+.commande-form label {
+  display: block;
+  margin-bottom: 18px;
+  color: #e73b83;
+  font-weight: bold;
+  font-family: "Didact Gothic", sans-serif;
+}
+.commande-form input {
+  display: block;
+  margin-top: 7px;
+  width: 100%;
+  padding: 9px 10px;
+  border-radius: 11px;
+  border: 1px solid #eee;
+  font-size: 1rem;
+  background: #faf6fa;
+}
+.commande-valider-btn {
+  margin-top: 22px;
+  padding: 13px 30px;
+  background: #e73b83;
+  color: #fff;
+  font-family: "Didact Gothic", sans-serif;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.15rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.17s;
+}
+.commande-valider-btn:hover {
+  background: #b4005a;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+/* Utilise ta version locale ou Playfair Display si tu n’as pas Recoleta */
+
+.commande-main h2 {
+  font-family: 'Recoleta', 'Recoleta Black', serif;
+  font-size: 2.2rem;
+  color: #e73b83;
+  font-weight: 900;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.commande-form label {
+  display: block;
+  margin-bottom: 18px;
+  color: #e73b83;
+  font-weight: bold;
+  font-family: "Didact Gothic", Arial, sans-serif;
+  font-size: 1.09rem;
+}
+.commande-form input {
+  display: block;
+  margin-top: 7px;
+  width: 100%;
+  padding: 9px 10px;
+  border-radius: 11px;
+  border: 1px solid #eee;
+  font-size: 1rem;
+  background: #faf6fa;
+  font-family: "Didact Gothic", Arial, sans-serif;
+}
+.form-error {
+  color: #d60038;
+  font-size: 0.93em;
+  margin-left: 4px;
+  font-weight: normal;
+}

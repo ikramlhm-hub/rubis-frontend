@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+.rheaclub-main {
+  max-width: 420px;
+  margin: 42px auto 0 auto;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 2px 16px rgba(231,59,131,0.08);
+  padding: 40px 28px 36px 28px;
+  min-height: 350px;
+}
+
+.rheaclub-title {
+  font-family: 'Recoleta', 'Recoleta Black', serif;
+  font-size: 2.2rem;
+  color: #e73b83;
+  font-weight: 900;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.pending-product-card {
+  background: #ffe2ed;
+  border-radius: 20px;
+  padding: 28px 22px 22px 22px;
+  box-shadow: 0 4px 14px rgba(231,59,131,0.08);
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.pending-product-label {
+  color: #e73b83;
+  font-family: "Didact Gothic", Arial, sans-serif;
+  font-size: 1.14rem;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.pending-product-nom {
+  font-size: 1.18rem;
+  font-family: "Didact Gothic", Arial, sans-serif;
+  margin-bottom: 16px;
+  color: #c7005c;
+}
+
+.pending-product-btn {
+  background: #e73b83;
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  padding: 12px 30px;
+  font-family: "Didact Gothic", Arial, sans-serif;
+  font-size: 1.08rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.pending-product-btn:hover {
+  background: #b4005a;
+}
+
+.no-product {
+  margin-top: 30px;
+  text-align: center;
+  color: #b4005a;
+  font-family: "Didact Gothic", Arial, sans-serif;
+  font-size: 1.15rem;
+}
+
+@media (max-width: 600px) {
+  .rheaclub-main { max-width: 97vw; padding: 16px 7vw; }
+  .pending-product-card { padding: 20px 7vw; }
+}

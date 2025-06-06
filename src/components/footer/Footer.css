@@ -1,0 +1,249 @@
+/* =========================================
+   Footer.css
+   - Titres  : Recoleta Black (fichier local)
+   - Texte  : Didact Gothic (Google Fonts)
+   ========================================= */
+
+/* =========================================
+   1) @font-face pour Recoleta Black
+   ========================================= */
+@font-face {
+  font-family: 'Recoleta Black';
+  src: url('../../assets/fonts/Recoleta-Black.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* =========================================
+   2) IMPORT DE DIDACT GOTHIC (Google Fonts)
+   ========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+
+/* =========================================
+   3) VARIABLES GÉNÉRALES
+   ========================================= */
+:root {
+  --footer-bg:         #E83D6D;            /* Fond rose */
+  --footer-text:       #FFFFFF;            /* Texte en blanc */
+  --footer-link:       #FFFFFF;            /* Liens en blanc */
+  --footer-link-hover: rgba(255,255,255,0.8);
+
+  /* Polices */
+  --font-title:        'Recoleta Black', sans-serif;
+  --font-body:         'Didact Gothic', sans-serif;
+
+  --footer-radius:     24px;               /* Coins arrondis */
+}
+
+/* =========================================
+   4) STYLE GLOBAL DU FOOTER
+   ========================================= */
+.footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  font-family: var(--font-body);           /* Texte en Didact Gothic */
+  border-radius: var(--footer-radius) var(--footer-radius) 0 0;
+  margin-top: 40px; /* même principe qu’au-dessus */
+  margin-left: 40px; /* même principe qu’au-dessus */
+  margin-right: 40px; /* même principe qu’au-dessus */
+
+
+}
+
+/* Container centralisé */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* =========================================
+   5) SECTION PRINCIPALE (3 COLONNES)
+   ========================================= */
+.footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: space-between;
+  padding: 3.5rem 0 2rem;   /* Haut 3.5rem, bas 2rem */
+}
+
+/* Chaque colonne prend au moins 250px, puis se répartit */
+.footer__col {
+  flex: 1 1 250px;
+}
+
+/* — Titre principal (“Rhea”) — */
+.footer__title {
+  font-family: var(--font-title);          /* Recoleta Black */
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* — Titre 3 (“Menu” et “Contact”) — */
+.footer__heading {
+  font-family: var(--font-title);          /* Recoleta Black */
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* — Texte descriptif (Didact Gothic) — */
+.footer__text {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 340px;
+}
+
+/* — Icônes réseaux sociaux — */
+.footer__social {
+  display: block;
+  margin-top: 1.75rem;
+  max-width: 160px;
+  width: 100%;
+  height: auto;
+}
+
+/* =========================================
+   6) MENU (liste sans puces)
+   ========================================= */
+.footer__col--menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__col--menu li {
+  margin-bottom: 0.5rem;
+}
+
+.footer__col--menu a {
+  color: var(--footer-link);
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: var(--font-body);           /* Didact Gothic */
+  transition: opacity 0.2s ease;
+}
+
+.footer__col--menu a:hover {
+  opacity: 0.8;
+}
+
+/* =========================================
+   7) COLONNE CONTACT
+   ========================================= */
+.footer__col--contact p {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  font-family: var(--font-body);           /* Didact Gothic */
+}
+
+.footer__col--contact a {
+  color: var(--footer-link);
+  text-decoration: none;
+  font-family: var(--font-body);
+}
+
+/* =========================================
+   8) ICÔNES DE PAIEMENT (CENTRÉES)
+   ========================================= */
+.footer__payments-wrapper {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.footer__payments {
+  display: inline-block;
+  height: 40px;             /* Hauteur fixe pour correspondre à la maquette */
+  width: auto;
+}
+
+/* =========================================
+   9) BAS DE PAGE LÉGAL
+   ========================================= */
+.footer__legal-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  padding: 1rem 0;
+}
+
+/* — “2025, RHÉA” — */
+.footer__legal-year {
+  font-size: 0.875rem;
+  font-family: var(--font-body);           /* Didact Gothic */
+}
+
+/* — Liste des liens légaux — */
+.footer__legal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.5rem;         /* Espace horizontal entre liens, vertical si wrap */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__legal li {
+  margin: 0;
+}
+
+.footer__legal a {
+  color: var(--footer-link);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-family: var(--font-body);           /* Didact Gothic */
+  transition: opacity 0.2s ease;
+}
+
+.footer__legal a:hover {
+  opacity: 0.8;
+}
+
+/* =========================================
+   10) RESPONSIVE
+   ========================================= */
+@media (max-width: 768px) {
+  /* Colonne 3 → bas, sur petite largeur */
+  .footer__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Paiements centrés avec un peu moins de marge */
+  .footer__payments-wrapper {
+    margin-bottom: 1.5rem;
+  }
+
+  /* Bas de page légaux en colonne */
+  .footer__legal-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .footer__legal {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ajustements de taille pour très petits écrans */
+  .footer__title {
+    font-size: 1.75rem;
+  }
+
+  .footer__heading {
+    font-size: 1.25rem;
+  }
+
+  .footer__text,
+  .footer__col--contact p,
+  .footer__legal a,
+  .footer__legal-year {
+    font-size: 0.875rem;
+  }
+}

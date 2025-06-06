@@ -1,0 +1,345 @@
+.welcome-main {
+  padding: 0 0 70px 0;
+  background: #fff;
+  min-height: 80vh;
+}
+
+.welcome-header {
+  margin-top: 36px;
+  margin-bottom: 18px;
+  text-align: center;
+}
+.welcome-header h1 {
+  font-family: 'Recoleta Black', 'Reflecta Black', serif;
+  color: #f8426a;
+  font-size: 2.4rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.comma {
+  font-family: inherit;
+}
+.prenom {
+  font-family: inherit;
+  font-weight: 900;
+}
+.welcome-email {
+  color: #222;
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 1.1rem;
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+
+.welcome-nav {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  border-bottom: 1.5px solid #f2f2f2;
+  padding: 10px 0 8px 0;
+  margin-bottom: 28px;
+  font-family: "Didact Gothic", sans-serif;
+}
+.welcome-nav a {
+  color: #222;
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding-bottom: 6px;
+  transition: color 0.12s, border 0.12s;
+}
+.welcome-nav a.active,
+.welcome-nav a:hover {
+  color: #f8426a;
+  border-bottom: 2px solid #f8426a;
+  font-weight: bold;
+}
+
+.rhea-club {
+  display: flex;
+  align-items: center;
+  background: #f8426a;
+  color: #fff;
+  border-radius: 16px;
+  max-width: 900px;      /* Largeur max, ajuste si tu veux plus ou moins large */
+  width: 75vw;           /* Largeur relative à la fenêtre */
+  margin: 20px auto 30px auto;
+  padding: 28px 32px;
+  box-shadow: 0 3px 16px 0 rgba(248,66,106,0.07);
+  font-family: "Didact Gothic", sans-serif;
+  gap: 30px;
+}
+
+.rhea-club-title {
+  font-family: 'Recoleta Black', 'Reflecta Black', serif;
+  font-size: 2rem;
+  font-weight: 800;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-right: 38px;
+}
+
+.rhea-club-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1 1 0;
+  gap: 34px;
+  min-width: 0;
+}
+
+.rhea-club-desc {
+  font-size: 1.05rem;
+  font-family: "Didact Gothic", sans-serif;
+  line-height: 1.4;
+  max-width: 430px;
+  min-width: 0;
+  text-align: left;
+  /* S'assure que le texte reste sur une ligne max sinon saute */
+  overflow-wrap: break-word;
+}
+
+.rhea-club-btn {
+  background: #fff;
+  color: #f8426a;
+  border-radius: 16px;
+  border: none;
+  font-size: 1.02rem;
+  padding: 7px 22px;
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  white-space: nowrap;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.04);
+  transition: background 0.14s, color 0.14s;
+}
+
+.rhea-club-btn:hover {
+  background: #ffe6ed;
+}
+
+@media (max-width: 900px) {
+  .rhea-club {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 8px;
+    width: 98vw;
+    max-width: 99vw;
+    gap: 12px;
+  }
+  .rhea-club-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+  }
+  .rhea-club-desc {
+    max-width: 100%;
+  }
+  .rhea-club-btn {
+    margin-top: 6px;
+    width: 100%;
+    max-width: 220px;
+  }
+}
+
+.abonnements, .recommande {
+  max-width: 900px;       
+  width: 75vw;              
+  margin: 32px auto 0 auto; 
+  font-family: "Didact Gothic", sans-serif;
+
+}
+.abonnements h2, .recommande h2 {
+  font-family: 'Recoleta Black', 'Reflecta Black', serif;
+  color: #222;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.abonnements p {
+  font-size: 1.05rem;
+  color: #444;
+}
+.abonnements a {
+  color: #f8426a;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.recommande-box {
+  background: #fafafa;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 32px 30px 24px 30px;
+  min-height: 170px;
+  margin-top: 18px;
+  box-shadow: 0 1px 8px 0 rgba(0,0,0,0.02);
+  gap: 28px;
+}
+
+.recommande-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.recommande-desc {
+  font-size: 1rem;
+  color: #222;
+  margin-bottom: 8px;
+  font-family: "Didact Gothic", sans-serif;
+}
+
+.recommande-produit {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.recommande-img {
+  width: 70px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+  background: #fff;
+  margin-bottom: 2px;
+  box-shadow: 0 1px 6px 0 rgba(0,0,0,0.07);
+}
+
+.recommande-buy-btn {
+  background: #fff;
+  color: #222;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 5px 18px;
+  font-size: 1rem;
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 500;
+  margin-bottom: 2px;
+  cursor: pointer;
+  transition: background 0.13s, color 0.13s;
+}
+.recommande-buy-btn:hover {
+  background: #f8426a;
+  color: #fff;
+}
+
+.recommande-nom {
+  font-size: 1.08rem;
+  color: #222;
+  font-family: "Didact Gothic", sans-serif;
+  margin-bottom: 1px;
+}
+
+.recommande-prix {
+  font-size: 1rem;
+  color: #222;
+  font-family: "Didact Gothic", sans-serif;
+}
+
+.recommande-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  min-width: 180px;
+}
+
+.recommande-search {
+  padding: 7px 18px;
+  border-radius: 18px;
+  border: 1px solid #e0e0e0;
+  font-size: 1rem;
+  font-family: "Didact Gothic", sans-serif;
+  width: 210px;
+  background: #fff;
+  outline: none;
+  transition: border 0.14s;
+}
+.recommande-search:focus {
+  border: 1.5px solid #f8426a;
+}
+
+@media (max-width: 900px) {
+  .recommande-box {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px 10px 16px 10px;
+    gap: 18px;
+  }
+  .recommande-right {
+    justify-content: flex-start;
+    margin-top: 8px;
+  }
+}
+
+.historique, .parametres {
+  max-width: 900px;
+  width: 75vw;
+  margin: 36px auto 0 auto;
+  font-family: "Didact Gothic", sans-serif;
+}
+
+.historique h2, .parametres h2 {
+  font-family: 'Recoleta Black', 'Reflecta Black', serif;
+  color: #222;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+.historique p {
+  font-size: 1.05rem;
+  color: #444;
+}
+
+.historique a {
+  color: #f8426a;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.info-card {
+  background: #fafafa;
+  border-radius: 10px;
+  padding: 26px 24px;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 1rem;
+  color: #222;
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  max-width: 350px;
+  box-shadow: 0 1px 8px 0 rgba(0,0,0,0.02);
+}
+
+.info-label {
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.info-value {
+  margin-top: 2px;
+  color: #333;
+}
+
+.logout-bar {
+  margin: 44px 0 0 0;
+  padding: 28px 0 36px 0;
+  text-align: center;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 1.14rem;
+  color: #111;
+  border-top: 1.2px solid #f3f3f3;
+  cursor: pointer;
+  width: 100vw;
+}
+.logout-bar:hover {
+  color: #f8426a;
+  text-decoration: underline;
+}
+

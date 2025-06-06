@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+.bienfaits-page {
+  max-width: 100vw;
+  margin: 0;
+  padding: 44px 0 0 0;
+  background: #fff;
+  font-family: "Didact Gothic", sans-serif;
+}
+
+.bienfaits-hero {
+  position: relative;
+  width: calc(100vw - 64px);
+  max-width: 1800px;
+  margin: 0 auto 56px auto;
+  border-radius: 32px;
+  overflow: hidden;
+  min-height: 520px;
+  background: #fff;
+  box-shadow: 0 2px 32px 0 rgba(0,0,0,0.04);
+}
+
+.bienfaits-hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 32px;
+  object-fit: cover;
+  min-height: 520px;
+  max-height: 760px;
+  filter: brightness(0.92);
+}
+
+.bienfaits-hero-title {
+  position: absolute;
+  left: 0; right: 0; top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 3.1rem;
+  font-weight: bold;
+  text-shadow: 0 2px 16px rgba(0,0,0,0.30);
+  letter-spacing: 0.03em;
+  z-index: 2;
+  padding: 0 30px;
+}
+
+@media (max-width: 1200px) {
+  .bienfaits-hero {
+    width: calc(100vw - 24px);
+    min-height: 320px;
+    border-radius: 18px;
+  }
+  .bienfaits-hero-img {
+    min-height: 320px;
+    border-radius: 18px;
+  }
+  .bienfaits-hero-title {
+    font-size: 1.6rem;
+    padding: 0 10px;
+  }
+}
+
+.bienfaits-section {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto 56px auto;
+  padding: 0 0 0 0;
+}
+
+.bienfaits-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.bienfaits-texte {
+  flex: 1.1;
+  max-width: 660px;
+}
+
+.bienfaits-texte h2 {
+  color: #f8426a;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.bienfaits-texte p {
+  font-family: "Didact Gothic", sans-serif;
+  color: #222;
+  font-size: 1.1rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.bienfaits-image-wrap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.bienfaits-image {
+  width: 798px;
+  height: 340px;
+  max-width: 100%;
+  border-radius: 22px;
+  display: block;
+  object-fit: cover;
+  box-shadow: 0 2px 24px rgba(0,0,0,0.07);
+}
+
+@media (max-width: 1024px) {
+  .bienfaits-content {
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+  .bienfaits-image-wrap {
+    justify-content: center;
+    width: 100%;
+  }
+  .bienfaits-image {
+    width: 100%;
+    max-width: 470px;
+    margin: 0 auto;
+  }
+  .bienfaits-texte {
+    max-width: 100%;
+  }
+}
+
+.bienfaits-content.inverse {
+  flex-direction: row-reverse;
+}
+
+/* Liste premium pour les bienfaits */
+.bienfaits-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.07rem;
+}
+.bienfaits-list li {
+  margin-bottom: 7px;
+  line-height: 1.5;
+  font-family: "Didact Gothic", sans-serif;
+}
+.bienfaits-list b {
+  color: #111;
+  font-weight: bold;
+}
+
+.bienfaits-texte h2 {
+  color: #f8426a;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
