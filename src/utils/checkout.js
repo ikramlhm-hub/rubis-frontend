@@ -11,7 +11,7 @@ export async function validateCart() {
   const cartId = getCartId();
   try {
     const res = await axios.post(
-      "http://localhost:5000/api/cart/validate",
+      "https://rubis-backend-production.up.railway.app/api/cart/validate",
       { cartId },
       { headers: { Authorization: `Bearer ${token}` } }
     );

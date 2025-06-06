@@ -23,7 +23,7 @@ export default function Login() {
 
     try {
       // envoie bien le champ mot_de_passe, pas password !
-      const res = await axios.post("http://localhost:5000/api/utilisatrices/login", {
+      const res = await axios.post("https://rubis-backend-production.up.railway.app/api/utilisatrices/login", {
         email,
         mot_de_passe: password,
       });

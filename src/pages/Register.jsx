@@ -17,7 +17,7 @@ const handleSubmit = async (e) => {
   setLoading(true);
 
   try {
-    const res = await axios.post("http://localhost:5000/api/utilisatrices/register", {
+    const res = await axios.post("https://rubis-backend-production.up.railway.app/api/utilisatrices/register", {
       nom,
       prenom,
       email,

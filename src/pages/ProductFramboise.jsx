@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/ProductFramboise.css";
-import { handleAddToCart } from "../utils/cart";
+//import { handleAddToCart } from "../utils/cart";
 
 import visuel1 from "../assets/details/produitv2.png";
 import visuel2 from "../assets/details/herbe.png";
@@ -9,7 +9,7 @@ import visuel4 from "../assets/details/fille.png";
 import trioBouteille from "../assets/details/trio-bouteille.png";
 
 // ID du produit Rhéa Framboise dans ta BDD
-const PRODUCT_ID_FRAMBOISE = 2;
+//const PRODUCT_ID_FRAMBOISE = 2;
 
 const ProductFramboise = () => (
   <>

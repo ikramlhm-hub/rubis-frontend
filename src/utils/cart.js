@@ -18,7 +18,7 @@ export async function handleAddToCart(productId, quantity = 1, unitPrice = null)
 
   try {
     const response = await axios.post(
-      "http://localhost:5000/api/cart/add",
+      "https://rubis-backend-production.up.railway.app/api/cart/add",
       { cartId, productId, quantity, unitPrice }
     );
     alert("Produit ajouté au panier !");
@@ -33,7 +33,7 @@ export async function handleAddToCart(productId, quantity = 1, unitPrice = null)
 export async function getCart() {
   const cartId = getCartId();
   try {
-    const response = await axios.get(`http://localhost:5000/api/cart/${cartId}`);
+    const response = await axios.get(`https://rubis-backend-production.up.railway.app/api/cart/${cartId}`);
     return response.data;
   } catch (err) {
     console.error("Erreur lors de la récupération du panier", err);
@@ -45,7 +45,7 @@ export async function getCart() {
 export async function removeCartItem(detailId) {
   const cartId = getCartId();
   try {
-    await axios.delete(`http://localhost:5000/api/cart/item/${detailId}?cartId=${cartId}`);
+    await axios.delete(`https://rubis-backend-production.up.railway.app/api/cart/item/${detailId}?cartId=${cartId}`);
   } catch (err) {
     console.error("Erreur lors de la suppression de l'article du panier", err);
   }

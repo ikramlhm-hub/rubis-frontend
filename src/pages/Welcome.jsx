@@ -11,7 +11,7 @@ export default function Welcome() {
       const token = localStorage.getItem("token");
       if (!token) return window.location.href = "/login";
       try {
-        const res = await fetch("http://localhost:5000/api/utilisatrices/me", {
+        const res = await fetch("https://rubis-backend-production.up.railway.app/api/utilisatrices/me", {
           headers: { Authorization: "Bearer " + token }
         });
         const data = await res.json();
@@ -28,7 +28,7 @@ export default function Welcome() {
     const token = localStorage.getItem("token");
     try {
       // OPTIONNEL : appeler le backend (seulement si tu as un /api/logout, sinon ça passe)
-      await fetch("http://localhost:5000/api/logout", {
+      await fetch("https://rubis-backend-production.up.railway.app/api/logout", {
         method: "POST",
         headers: { Authorization: "Bearer " + token }
       });
