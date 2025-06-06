@@ -1,7 +1,7 @@
 // frontend/src/utils/cart.js
 
 import axios from "axios";
-import API_URL from "../config"; // ✅ ajout de l'import
+import API_URL from 'config.js';
 
 // Génère ou récupère un cartId unique dans le localStorage
 function getCartId() {

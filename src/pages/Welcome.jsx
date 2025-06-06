@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Welcome.css"; 
 import visuelHibiscus from '../assets/details/boisson-recommande.png'; 
-import API_URL from "../config";
+import API_URL from 'config.js';
 
 
 export default function Welcome() {

@@ -1,6 +1,6 @@
 import axios from "axios";
 import { getCartId } from "./cart";
-import API_URL from "../config"; // ✅ ajout
+import API_URL from 'config.js';
 
 // Handler pour valider le panier (passer commande)
 export async function validateCart() {

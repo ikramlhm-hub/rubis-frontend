@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"; 
 import "../styles/Login.css";
 import axios from "axios";
-import API_URL from "../config";
+import API_URL from 'config.js';
 
 export default function Login() {
   const [email, setEmail] = useState("");
