@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"; 
 import "../styles/Login.css";
 import axios from "axios";
+import API_URL from "../config/api";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -23,10 +24,11 @@ export default function Login() {
 
     try {
       // envoie bien le champ mot_de_passe, pas password !
-      const res = await axios.post("https://rubis-backend-production.up.railway.app/api/utilisatrices/login", {
-        email,
-        mot_de_passe: password,
-      });
+        const res = await axios.post(`${API_URL}/api/utilisatrices/login`, {
+          email,
+          mot_de_passe: password,
+        });
+
       // Stocke le token si tu le reçois :
       if (res.data.token) {
         localStorage.setItem("token", res.data.token);

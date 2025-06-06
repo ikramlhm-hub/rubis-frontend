@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Welcome.css"; 
 import visuelHibiscus from '../assets/details/boisson-recommande.png'; 
+import API_URL from "../config/api";
+
 
 export default function Welcome() {
   const [user, setUser] = useState(null);
@@ -11,9 +13,10 @@ export default function Welcome() {
       const token = localStorage.getItem("token");
       if (!token) return window.location.href = "/login";
       try {
-        const res = await fetch("https://rubis-backend-production.up.railway.app/api/utilisatrices/me", {
-          headers: { Authorization: "Bearer " + token }
-        });
+        const res = await fetch(`${API_URL}/api/utilisatrices/me`, {
+                  headers: { Authorization: "Bearer " + token }
+                });
+
         const data = await res.json();
         setUser(data);
       } catch {
@@ -28,10 +31,11 @@ export default function Welcome() {
     const token = localStorage.getItem("token");
     try {
       // OPTIONNEL : appeler le backend (seulement si tu as un /api/logout, sinon ça passe)
-      await fetch("https://rubis-backend-production.up.railway.app/api/logout", {
+      await fetch(`${API_URL}/api/logout`, {
         method: "POST",
         headers: { Authorization: "Bearer " + token }
       });
+
     } catch (e) {
       // L’erreur ici n’est pas bloquante
     }

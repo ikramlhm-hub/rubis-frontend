@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../styles/Register.css";
 import axios from "axios";
+import API_URL from "../config/api";
 
 
 export default function Register() {
@@ -17,11 +18,11 @@ const handleSubmit = async (e) => {
   setLoading(true);
 
   try {
-    const res = await axios.post("https://rubis-backend-production.up.railway.app/api/utilisatrices/register", {
+    const res = await axios.post(`${API_URL}/api/utilisatrices/register`, {
       nom,
       prenom,
       email,
-        mot_de_passe: password, //,
+      mot_de_passe: password,
     });
 
     alert("Compte créé ! Connecte-toi.");
