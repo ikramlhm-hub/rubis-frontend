@@ -2,7 +2,7 @@ import API_URL from 'config.js';
 
 // Récupérer le contenu du panier
 export async function getCart(cartId) {
-  const res = await fetch(`${API_URL}/cart/${cartId}`);
+  const res = await fetch(`${API_URL}/api/cart/${cartId}`);
   if (!res.ok) throw new Error("Erreur lors de la récupération du panier.");
   return res.json();
 }
@@ -25,7 +25,7 @@ export async function addToCart(data) {
 
 // Supprimer un item du panier
 export async function removeCartItem(detailId) {
-  const res = await fetch(`${API_URL}/cart/item/${detailId}`, {
+  const res = await fetch(`${API_URL}/api/cart/item/${detailId}`, {
     method: "DELETE",
   });
   if (!res.ok) throw new Error("Erreur lors de la suppression du produit.");
@@ -34,7 +34,7 @@ export async function removeCartItem(detailId) {
 
 // Vider tout le panier
 export async function clearCart(cartId) {
-  const res = await fetch(`${API_URL}/cart/clear/${cartId}`, {
+  const res = await fetch(`${API_URL}/api/cart/clear/${cartId}`, {
     method: "DELETE",
   });
   if (!res.ok) throw new Error("Erreur lors du vidage du panier.");
@@ -43,7 +43,7 @@ export async function clearCart(cartId) {
 
 // Valider le panier (nécessite authentification)
 export async function validateCart(cartId, token) {
-  const res = await fetch(`${API_URL}/cart/validate`, {
+  const res = await fetch(`${API_URL}/api/cart/validate`, {
     method: "POST",
     headers: { 
       "Content-Type": "application/json",
