@@ -26,7 +26,7 @@ function App() {
   useEffect(() => {
     let cartId = localStorage.getItem("cartId");
     if (!cartId) {
-      fetch(`${API_URL}/cart/create`, {
+      fetch(`${API_URL}/api/cart/create`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
       })
