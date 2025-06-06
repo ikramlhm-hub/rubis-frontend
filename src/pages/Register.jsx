@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/Register.css";
 import axios from "axios";
-import API_URL from "../config/api";
+import API_URL from "../config";
 
 
 export default function Register() {
