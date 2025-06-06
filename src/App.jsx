@@ -15,7 +15,7 @@ import Register from "./pages/Register";
 import NotreHistoire from "./pages/NotreHistoire";
 import Welcome from "./pages/Welcome";
 import Panier from "./pages/Panier";
-import API_URL from "./config"; 
+import API_URL from "../config"; 
 import Commande from "./pages/Commande";
 
 

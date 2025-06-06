@@ -1,4 +1,4 @@
-import API_URL from "./config";
+import API_URL from "../config";
 
 // Récupérer le contenu du panier
 export async function getCart(cartId) {
