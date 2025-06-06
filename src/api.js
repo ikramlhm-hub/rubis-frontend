@@ -10,7 +10,7 @@ export async function getCart(cartId) {
 // Ajouter un produit au panier
 export async function addToCart(data) {
   const token = localStorage.getItem("token");
-  const res = await fetch(`${API_URL}/cart/add`, {
+  const res = await fetch(`${API_URL}/api/cart/add`, {
     method: "POST",
     headers: { 
       "Content-Type": "application/json",
